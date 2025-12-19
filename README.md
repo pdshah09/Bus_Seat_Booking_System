@@ -1,4 +1,4 @@
-# BUS_SEAT_BOOKING_SYSTEM
+# [BUS_SEAT_BOOKING_SYSTEM](https://github.com/pdshah09/Bus_Seat_Booking_System)
 
 *Seamless Booking, Smarter Journeys, Limitless Possibilities*
 
@@ -8,20 +8,20 @@
 
 **Built with:**
 
-![Python](https://img.shields.io/badge/Python-3776AB.svg?style=flat&logo=python&logoColor=white)
-![Django](https://img.shields.io/badge/Django-092E20.svg?style=flat&logo=django&logoColor=white)
-![HTML](https://img.shields.io/badge/HTML5-E34F26.svg?style=flat&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS3-1572B6.svg?style=flat&logo=css3&logoColor=white)
+[![Python](https://img.shields.io/badge/Python-3776AB.svg?style=flat&logo=python&logoColor=white)](https://www.python.org/)
+[![Django](https://img.shields.io/badge/Django-092E20.svg?style=flat&logo=django&logoColor=white)](https://www.djangoproject.com/)
+[![HTML](https://img.shields.io/badge/HTML5-E34F26.svg?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS](https://img.shields.io/badge/CSS3-1572B6.svg?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
 ---
 
 ## 📑 Table of Contents
 
-- [Overview](#overview)
-- [Features](#features)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  
+- [Overview](#-overview)
+- [Features](#-features)
+- [Getting Started](#-getting-started)
+  - [Prerequisites](#-prerequisites)
+
 ---
 
 ## 📌 Overview
@@ -48,10 +48,10 @@
 
 Ensure you have the following installed:
 
-- **Python 3.8+**
-- **Django 4.x**
-- **pip**
-- **Virtualenv (recommended)**
-- **SQLite3**
+- **[Python 3.8+](https://www.python.org/downloads/)**
+- **[Django 4.x](https://docs.djangoproject.com/en/4.0/releases/)**
+- **[pip](https://pip.pypa.io/en/stable/)**
+- **[Virtualenv](https://virtualenv.pypa.io/en/latest/) (recommended)**
+- **[SQLite3](https://www.sqlite.org/index.html)**
 
 ---
