@@ -1,0 +1,95 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Bus Sekolah - One Stop Solution Your Transport Requirements">
+    <meta name="author">
+
+    <title>BUS ROUTE -- One Stop Solution</title>
+
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'bus/css/boots.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'bus/css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'bus/css/bootstrap.min.css' %}">
+
+    <!-- js -->
+    <script type="text/javascript" src="{% static 'bus/js/prefixfree.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'bus/js/jquery.slim.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'bus/js/bootstrap.bundle.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'bus/js/popper.min.js' %}"></script>
+
+    <style>
+        #manu{
+            color: rgb(86, 86, 86);
+            font-size: larger;
+            font-weight:600;
+            border: 1px solid orange;
+            border-radius:15px;
+            margin-left: 10px;
+        }
+        #manu:hover{
+            color:orange;
+            font-size: larger;
+            font-weight:600;
+            border: 1px solid rgb(86, 86, 86);;
+            background-color: rgb(86, 86, 86);;
+            border-radius:15px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class=" bg-white pb-2" >
+        <img src="{% static 'bus/img/logo.png'%}" class="logo">  
+            <nav class="navbar navbar-expand-md bg-white  pull-right  ">
+                <span class="navbar-toggler" style="background-color: transparent;" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <div class="bars">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </span> 
+                {% if request.session.driver_name %}   
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                    <li class="nav-item"><a id="manu" class="nav-link" href={% url 'home' %}>Home</a></li>
+                    <li class="nav-item"><a id="manu" class="nav-link" >Welcome {{driver.driver_name}} </a></li>
+                    {% comment %} <li class="nav-item"><a id="manu" class="nav-link" href="{% url 'driverlogin' %}">Driver </a></li> {% endcomment %}
+                    <li class="nav-item"><a id="manu" class="nav-link" href="{% url 'markedroute' %}">Bus Route </a></li>
+                    {% comment %} <li class="nav-item"><a id="manu" class="nav-link" href="{% url 'buslist' %}">Bus List </a></li> {% endcomment %}
+                    <li class="nav-item"><a id="manu" class="nav-link" href="{% url 'driverlogout' %}">Logout D</a></li>
+                    </ul>
+                </div>
+                {% elif request.session.email %} 
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                    <li class="nav-item"><a id="manu" class="nav-link" href={% url 'home' %}>Home</a></li>
+                    <li class="nav-item"><a id="manu" class="nav-link" >Welcome {{user.first_name}} </a></li>
+                    {% comment %} <li class="nav-item"><a id="manu" class="nav-link" href="{% url 'driverlogin' %}">Driver </a></li> {% endcomment %}
+                    <li class="nav-item"><a id="manu" class="nav-link" href="{% url 'saetdetail' %}">Seat details </a></li>
+                    <li class="nav-item"><a id="manu" class="nav-link" href="{% url 'buslist' %}">Bus List </a></li>
+                    <li class="nav-item"><a id="manu" class="nav-link" href="{% url 'logout' %}">Logout</a></li>
+                    </ul>       
+                </div>
+                {% else %} 
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                    <li class="nav-item"><a id="manu" class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a id="manu" class="nav-link" href="{% url 'login' %}">User Login</a></li>
+                    <li class="nav-item"><a id="manu" class="nav-link" href="{% url 'driverlogin' %}">Driver Login</a></li>
+                    {% comment %} <li class="nav-item"><a id="manu" class="nav-link" href="{% url 'markedroute' %}">Bus Route </a></li> {% endcomment %}
+                    {% comment %} <li class="nav-item"><a id="manu" class="nav-link" href="{% url 'buslist' %}">Bus List </a></li> {% endcomment %}
+                    {% comment %} <li class="nav-item"><a id="manu" class="nav-link" href="{% url 'driverlogout' %}">Logout N</a></li> {% endcomment %}
+                    </ul>
+                </div> 
+                {% endif %}
+            </nav>
+    </div>
+    {% block content %}
+    {% endblock content %}
+</body>
+</html>

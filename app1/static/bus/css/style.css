@@ -1,0 +1,422 @@
+/* IMPORT FONT */
+@font-face{
+	src: url("fonts/raleway/Raleway-Regular.woff");
+	font-family: "Raleway";
+}
+@font-face{
+	src: url("fonts/raleway/Raleway-Black.woff");
+	font-family: "Raleway";
+	font-weight: bold;
+}
+@font-face{
+	src: url("fonts/karla/Karla-Regular.woff");
+	font-family: "Karla";
+}
+@font-face{
+	src: url("fonts/karla/Karla-Bold.woff");
+	font-family: "Karla";
+	font-weight: bold;
+}
+
+/* TEXT SELECTION */
+::selection{
+	background: #ffb204;
+	color: #fff;
+}
+.email{
+	padding: 8px 0;
+	font-family: "Karla", sans-serif;
+}
+
+/* NAVIGATION TOP */
+nav{
+	padding: 4px 0;
+    background: #f6f6f6;
+    color: #666;
+}
+.form-seacrh{
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+.form-search .form-control{
+    width: 240px;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-size: 12px;
+    color: #666;
+    font-family: "Karla", sans-serif;
+}
+.form-search .form-control:focus{
+    outline: none;
+}
+.form-search button{
+    padding: 8px 10px;
+    border: none;
+    background: #394650;
+    border: 1px solid #262b2f;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Karla", sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: "Karla", sans-serif;
+}
+.form-search button:hover{
+	background: #2e353b;
+}
+
+/* HEADER */
+header{
+	padding: 0;
+	background: #fff;
+}
+.logo{
+	margin-bottom: 0px;
+}
+
+/* MENU LIST */
+header .list-inline{
+    background: #ffb204;
+}
+.list-inline{
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+.list-inline li{
+    display: inline;
+    float: left;
+    padding: 16px 0;
+}
+.list-inline::before{
+	content: " ";
+	position: absolute;
+	border-top: 55px solid #fff;
+	border-right: 55px solid transparent;
+    top: 0;
+    left: 0;
+}
+.list-inline li.first{
+	padding-left: 32px;
+}
+.list-inline li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 16px;
+    font-weight: bold;
+    border-right: 1px solid #d6980d;
+    font-family: "Karla", sans-serif;
+}
+.list-inline li.last{
+	padding-right: 48px;
+}
+.list-inline li.last a{
+    border-right: none;
+}
+.list-inline li a:hover{
+    background: #e3a10e; 
+}
+
+/* BANNER */
+.banner{
+	background: url("../img/1.jpg");
+	background-size: cover;
+}
+.overlay{
+	padding: 148px 0;
+	color: #fff;
+}
+.app-name{
+    padding: 12px 16px;
+    background: #fff;
+    color: #666;
+    text-transform: uppercase;
+    position: relative;
+    padding-right: 32px;
+    font-family: "Karla", sans-serif;
+}
+.app-name::before{
+    content: " ";
+    position: absolute;
+    border-bottom: 40px solid transparent;
+    border-right: 15px solid #050808;
+    right: 0;
+    top: 0;
+}
+.banner h1.title{
+	font-size: 52px;
+	font-weight: bold;
+	font-family: "Raleway", sans-serif;
+}
+.btn{
+	padding: 14px 16px;
+	border: none;
+	font-weight: bold;
+	font-family: "Karla", sans-serif;
+	cursor: pointer;
+}
+.btn-primary{
+	background: #ffb204;
+	color: #fff;
+}
+.btn-primary:hover{
+	background: #e6a104; 
+}
+.btn-secondary{
+	background: #e04622;
+	color: #fff;
+}
+.btn-secondary:hover{
+    background: #b5381b;
+}
+h1,h2,h3,h4,h5{
+	padding: 0;
+	margin: 0;
+}
+
+/* SECTION */
+section{
+	padding: 48px 0;
+}
+section h2.subtitle{
+	color: #999;
+	padding: 0;
+	margin: 8px 0;
+	font-size: 14px;
+	font-family: "Karla", sans-serif;
+}
+section h2.title{
+	color: #333;
+	padding: 0;
+	margin: 8px 0;
+	margin-bottom: 16px;
+	font-size: 34px;
+	font-weight: bold;
+	font-family: "Raleway", sans-serif;
+}
+.separator.blue{
+	width: 48px;
+	padding: 1px;
+    margin: 8px 0;
+	background: #009ade;
+    border-radius: 4px;
+}
+.separator.orange{
+	width: 48px;
+	padding: 1px;
+    margin: 8px 0;
+	background: #ffb204;
+    border-radius: 4px;
+}
+
+/* CARD */
+.card{
+	margin: 4px;
+	background: #fff;
+	box-shadow: 0px 0px 4px 2px #ddd;
+}
+.card:hover{
+    box-shadow: 0px 0px 4px 2px #bbb;
+    transition: ease-in-out 0.3s;
+}
+.card img{
+	width: 100%;
+}
+.card-body{
+	padding: 32px 24px;
+}
+.card-body h2.title{
+	font-size: 22px;
+	margin: 0;
+	padding: 0;
+}
+.card-body p{
+	line-height: 1.5em;
+	color: #999;
+	font-size: 14px;
+	font-family: "Karla", sans-serif;
+}
+.card a{
+	color: #666;
+	text-decoration: none;
+	font-weight: bold;
+}
+p{
+	line-height: 1.4em;
+	color: #999;
+	font-family: "Karla", sans-serif;
+}
+
+/* MINI CARD */
+.card-mini{
+	box-shadow: 0px 0px 4px 2px #ddd;
+	overflow: hidden;
+	margin-left: 8px;
+	margin-right: 8px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+.card-mini:hover{
+    box-shadow: 0px 0px 4px 2px #bbb;
+    transition: ease-in-out 0.3s;
+}
+.card-mini img{
+    padding: 16px 0;
+}
+.card-mini h2.title{
+	font-size: 18px;
+}
+
+/* ALERT FOOTER */
+.footer{
+	background: #ffb204;
+	padding: 24px 0;
+}
+.footer h2.title{
+	font-size: 16px;
+	color: #fff;
+	font-family: "Raleway", sans-serif;
+	margin: 4px 0;
+}
+.footer h2.subtitle{
+	color: #666;
+	font-size: 14px;
+	margin: 4px 0;
+}
+
+/* BIG FOOTER */
+footer{
+	padding: 48px 0;
+	background: #394650;
+	color: #fff;
+}
+a:hover{
+	color: #ffb204;
+	transition: ease-in-out 0.1s;
+}
+footer .list-down{
+    padding: 0;
+    margin: 0;
+}
+footer .list-down li{
+    padding: 16px 0;
+    border-bottom: 1px solid #4b6376;
+}
+footer .list-down li a{
+    color: #fff;
+    text-decoration: none;
+    font-family: "Karla", sans-serif;
+    font-size: 12px;
+}
+footer .list-down li a:hover{
+    color: #ffb204;
+}
+footer b{
+	font-family: "Karla", sans-serif;
+	line-height: 1.4em;
+}
+
+/* COPYRIGHT */
+.copy{
+	background: #394650;
+	padding: 16px 0;
+	color: #bbb;
+	font-family: "Karla", sans-serif;
+	font-weight: bold;
+}
+.copy a{
+	color: #fff;
+	text-decoration: none;
+}
+
+/* FORM EMAIL */
+.form-submit{
+	padding: 0;
+	margin: 0;
+}
+.form-submit input{
+	width: 80%;
+	background: #4f5f6c;
+	padding: 10px 10px;
+	border: none;
+	float: left;
+	min-height: 38px;
+	color: #fff;
+	font-family: "Karla", sans-serif;
+}
+.form-submit input::placeholder{
+	color: #bbb;
+}
+.form-submit input:focus{
+	outline: none;
+}
+.form-submit button{
+	background: #ffb204;
+	color: #fff;
+	float: left;
+	width: 20%;
+	border: none;
+	padding: 0px;
+	cursor: pointer;
+	min-height: 38px;
+}
+.aquo{
+	transform: rotate(270deg);
+	float: right;
+	margin-right: 16px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 760px){
+	.banner h1.title{
+		font-size: 42px;
+	}
+	.email{
+		font-size: 12px;
+	}
+	.form-search .form-control{
+		width: 180px;
+	}
+
+	#footer .btn-secondary{
+		float: left;
+		margin: 4px 0;
+	}
+}
+@media screen and (max-width: 480px){
+	.form-search .form-control{
+		width: 240px;
+	}	
+}
+.separator-style{
+	width: 80px;
+	padding: 1px;
+	background: #ddd;
+	margin-bottom: 24px;
+	position: relative;
+}
+.separator-style::before{
+	content: " ";
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: #ddd;
+	border-radius: 50%;
+	top: -10px;
+	left: 30px;
+	border: 2px solid #fff;
+}
+.bullet{
+	margin-right: 24px;
+	margin-left: 8px;
+}
+.bullet::before{
+	content: " ";
+	width: 12px;
+	height: 12px;
+	background: #ddd;
+	position: absolute;
+	border-radius: 50%;
+	margin: 2px 0;
+}
