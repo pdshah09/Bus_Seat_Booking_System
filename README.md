@@ -21,13 +21,7 @@
 - [Features](#features)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Testing](#testing)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
-
+  
 ---
 
 ## 📌 Overview
@@ -58,6 +52,6 @@ Ensure you have the following installed:
 - **Django 4.x**
 - **pip**
 - **Virtualenv (recommended)**
-- **SQLite / PostgreSQL / MySQL**
+- **SQLite3**
 
 ---
